@@ -1,0 +1,231 @@
+/* importing google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: #4e54c8;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #8f94fb, #4e54c8);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #8f94fb, #4e54c8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+}
+
+/* Login Form */
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 430px;
+    width: 100%;
+    background: #F9F4F5;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0);
+}
+
+.container .form {
+    position: relative;
+    padding: 30px;
+}
+
+.container .form .title {
+    position: relative;
+    font-size: 27px;
+    font-weight: 600;
+}
+
+.form .title::before {
+    content:'';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width:30px ;
+    background-color: #4e54c8;
+    border-radius: 25px;
+}
+
+.form .input-field {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top:30px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center
+}
+
+.input-field input {
+    position: absolute;
+    background-color: #F9F4F5;
+    height: 100%;
+    width: 100%;
+    padding: 0 35px;
+    border: none;
+    font-size: 16px;
+    outline:none;
+    border-bottom: 2px solid #EADEDA;
+    border-top: 2px solid transparent;
+}
+
+.input-field input:is(:focus,:valid) {
+    border-bottom-color: #4e54c8;
+}
+
+.input-field input:not(:valid) {
+    border-bottom-color: red;
+}
+
+.input-field i {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    color: #4E54C8;
+    font-size: 23px;
+}
+
+.form .input-field .button {
+    align-self: flex-start;
+    border: none;
+    color: #fff;
+    border-radius: 6px;
+    padding: 9px 16px;
+    background-color: #4e54c8;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.error {
+    margin-top: 16px;
+    color: red;
+    font-size: 16px;
+}
+
+
+/* Instructions Page */
+
+.nav{
+    background-color: black;
+    color: white;
+    height: 96px;
+    padding-top: 15px;
+    font-weight: bold;
+    font-size: 50px;    
+}
+.main{
+    display: flex;
+    padding-top:80px;
+   
+}
+ol li{
+    padding-bottom: 20px;
+    padding-top: 15px;
+}
+.left{
+    padding-left: 11%;
+    font-size: 25px;
+
+}
+.right{
+    padding-left: 20%;
+   
+}
+.start-quiz-button{
+    padding: 7px 16px;
+    border-radius: 6px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    background-color: #4e54c8;
+    margin-left: 210px;
+}
+img{
+   
+    height: 80%;
+    width: 70%;
+    padding-left: 15px;
+    box-shadow: 20px 20px 5px rgb(206, 140, 222);
+} 
+
+/* Quiz Page */
+.main-div{
+    width: 100vw;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+.inner-div{
+    width: 40vw;
+    background-color: #fff;
+    padding: 3rem 6rem;
+    border-radius: 8px;
+    box-shadow:0 1rem 1rem  rgba(0,0,0,0.4) ;
+}
+.inner-div h2{
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 1rem 0 3rem 0;
+
+}
+.inner-div li{
+    margin-top: 1.5rem;
+}
+#buttons{
+display: flex;
+gap: 8rem;
+margin-top: 3rem;
+}
+#submit ,#next{
+    width: 100px;
+    height: 40px;
+    border: none;
+    background-color: #a2c7d3;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 5px;
+}
+.timer{
+    font-size: 2rem;
+  
+    font-weight: bold;
+    text-align: right;
+  
+    border-radius: 6px;
+}
+
+hr{
+    font-weight: bold;
+}
+
+ol {
+    margin-left: 26px;
+}
+
+.result {
+    display: none;
+    background: rgb(247, 242, 242);
+    padding: 16px;
+    border-radius: 4px;
+    font-size: 24px;
+}
+
+.result-row {
+    margin: 16px 0;
+}
+
+#resultheading{
+    font-size: 30px;
+    color: #0827f6;
+    font-weight: bold;
+    background: #a2c7d3;
+    padding: 10px;
+    }

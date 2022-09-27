@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="main-div">
+
+        <div class="inner-div" id="formDiv">
+            <div class="outer">
+                <p class="timer">15 : 00</p>
+            </div>
+             <hr>
+          <h2 class="question">Question comes here</h2>
+          <form id="quizForm">
+              <ul type="none">
+                <li>
+                    <input type="radio" id="answer1" name="answer" value="0" class="answer">
+                    <label for="answer1" id="option1">Answer Option</label>
+                </li>
+                <li>
+                    <input type="radio" id="answer2" name="answer" value="1" class="answer">
+                    <label for="answer2" id="option2">Answer Option</label>
+                </li>
+                <li>
+                    <input type="radio" id="answer3" name="answer" value="2" class="answer">
+                    <label for="answer3" id="option3">Answer Option</label>
+                </li>
+                <li>
+                    <input type="radio" id="answer4" name="answer" value="3" class="answer">
+                    <label for="answer4" id="option4">Answer Option</label>
+                </li>
+              </ul>
+              <div id="buttons">
+                <button type="button" id="next">Next</button>
+              </div>
+          </form>
+        </div>
+        <div id="result" class="result">
+        <p id="resultheading">Thanks for taking Quiz!</p>  
+          <p class="result-row">
+              Name: <span id="resultName"></span>
+          </p>
+
+          <p class="result-row">
+              Father's Name: <span id="resultFatherName"></span>
+          </p>
+              
+          <p class="result-row">
+              Email: <span id="resultEmail"></span>
+          </p>
+              
+          <p class="result-row">
+              Phone number: <span id="resultNumber"></span>
+          </p>
+              
+          <p class="result-row">
+              Total number of question: <span id="resultQuestions"></span>
+          </p>
+              
+          <p class="result-row">
+              Total number of correct answers: <span id="resultCorrectAnswers"></span>
+          </p>
+              
+          <p class="result-row">
+              Total number of wrong answers: <span id="resultWrongAnswers"></span>
+          </p>
+              
+          <p class="result-row">
+              Total number of unanswered question: <span id="resultBlankAnswers"></span>
+          </p>
+              
+          <p class="result-row">
+              Score: <span id="resultScore"></span>
+          </p>
+              
+          
+        </div>
+    </div>
+    <script src="../js/script.js"></script>
+</body>
+</html> 
